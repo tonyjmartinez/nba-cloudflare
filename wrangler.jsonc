@@ -11,7 +11,7 @@
 		"nodejs_compat"
 	],
 	"assets": {
-		"binding": "STATIC_ASSETS",
+		"binding": "ASSETS",
 		"directory": "./.output/public"
 	},
 	"observability": {
