@@ -3,7 +3,7 @@
 // Runtime types generated with workerd@1.20250924.0 2025-09-27 nodejs_compat
 declare namespace Cloudflare {
 	interface Env {
-		STATIC_ASSETS: Fetcher;
+		ASSETS: Fetcher;
 	}
 }
 interface Env extends Cloudflare.Env {}
@@ -7469,7 +7469,7 @@ type EventContext<Env, P extends string, Data> = {
     passThroughOnException: () => void;
     next: (input?: Request | string, init?: RequestInit) => Promise<Response>;
     env: Env & {
-        STATIC_ASSETS: {
+        ASSETS: {
             fetch: typeof fetch;
         };
     };
@@ -7484,7 +7484,7 @@ type EventPluginContext<Env, P extends string, Data, PluginArgs> = {
     passThroughOnException: () => void;
     next: (input?: Request | string, init?: RequestInit) => Promise<Response>;
     env: Env & {
-        STATIC_ASSETS: {
+        ASSETS: {
             fetch: typeof fetch;
         };
     };
